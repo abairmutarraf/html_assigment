@@ -1,0 +1,895 @@
+/* fonts start */
+
+@font-face {
+    font-family: 'NewYorkExtraLargeRegular';
+    src: url(./fonts/NewYorkExtraLargeRegular.ttf);
+}
+
+@font-face {
+    font-family: 'NewYorkSmallRegular';
+    src: url(./fonts/NewYorkSmallRegular.ttf);
+}
+
+@font-face {
+    font-family: 'NewYorkSmallSemibold';
+    src: url(./fonts/NewYorkSmallSemibold.ttf);
+}
+
+@font-face {
+    font-family: 'SF Mono Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Regular'), url('./fonts/SFMonoRegular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Mono Regular Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Regular Italic'), url('./fonts/SFMonoRegularItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Mono Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Light'), url('./fonts/SFMonoLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Mono Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Light Italic'), url('./fonts/SFMonoLightItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Mono Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Medium'), url('./fonts/SFMonoMedium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Mono Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Medium Italic'), url('./fonts/SFMonoMediumItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Mono Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Semibold'), url('./fonts/SFMonoSemibold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Mono Semibold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Semibold Italic'), url('./fonts/SFMonoSemiboldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Mono Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Bold'), url('./fonts/SFMonoBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Mono Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Bold Italic'), url('./fonts/SFMonoBoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Mono Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Heavy'), url('./fonts/SFMonoHeavy.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Mono Heavy Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Mono Heavy Italic'), url('./fonts/SFMonoHeavyItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SFProText';
+    src: url(./fonts/FontsFree-Net-SFProText-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'SF Pro Display Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Pro Display Regular'), url('./fonts/SFPRODISPLAYREGULAR.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Ultralight Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Pro Display Ultralight Italic'), url('./fonts/SFPRODISPLAYULTRALIGHTITALIC.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Thin Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Pro Display Thin Italic'), url('./fonts/SFPRODISPLAYTHINITALIC.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Pro Display Light Italic'), url('./fonts/SFPRODISPLAYLIGHTITALIC.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Pro Display Medium'), url('./fonts/SFPRODISPLAYMEDIUM.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Semibold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Pro Display Semibold Italic'), url('./fonts/SFPRODISPLAYSEMIBOLDITALIC.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Pro Display Bold'), url('./fonts/SFPRODISPLAYBOLD.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Heavy Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Pro Display Heavy Italic'), url('./fonts/SFPRODISPLAYHEAVYITALIC.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Black Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Pro Display Black Italic'), url('./fonts/SFPRODISPLAYBLACKITALIC.woff') format('woff');
+}
+
+
+/* fonts end */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-brand {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.my-navbar-margin {
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.navbar {
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+}
+
+.mynavbar-border {
+    border-bottom: 1px solid #E5E5E5;
+    padding-top: 25px;
+}
+
+.my-navbar-margin li {
+    padding-bottom: 10px;
+}
+
+.active {
+    border-bottom: 2px solid black;
+}
+
+
+/* nav bar img css start */
+
+.my-navbar-img {
+    width: 395.83px;
+    height: 37.53px;
+}
+
+@media (max-width:500px) {
+    .my-navbar-img {
+        width: 250px;
+        height: 37.53px;
+    }
+}
+
+@media (max-width:400px) {
+    .my-navbar-img {
+        width: 180px;
+        height: 37.53px;
+    }
+}
+
+.mynavlink-fontfamily {
+    font-family: 'NewYorkSmallRegular';
+    font-size: 18px;
+    color: black;
+}
+
+
+/* nav bar img css end */
+
+
+/* nav bar below heading start */
+
+.mycss-heading {
+    text-align: center;
+    font-weight: 700;
+    padding-top: 52px;
+    font-family: 'NewYorkExtraLargeRegular';
+    font-size: 50px;
+    line-height: 54px;
+}
+
+.mycss-heading {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+@media (max-width:500px) {
+    .mycss-heading {
+        text-align: center;
+        font-weight: 700;
+        padding-top: 52px;
+        font-family: 'NewYorkExtraLargeRegular';
+        font-size: 36px;
+        line-height: 42.96px;
+    }
+}
+
+
+/* nav bar below heading end */
+
+
+/* nav bar below heading paragraph start */
+
+.mycss-paragraph {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 36px;
+    font-weight: 400;
+    font-family: 'SF Mono Light';
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.mycss-paragraph p {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+@media (max-width:500px) {
+    .mycss-paragraph {
+        text-align: center;
+        padding-top: 32px;
+        padding-bottom: 36px;
+        font-weight: 400;
+        font-family: 'SF Mono Light';
+        font-size: 16px;
+        line-height: 27.2px;
+    }
+}
+
+
+/* nav bar below heading paragraph end */
+
+
+/* first image below paragraph start */
+
+.myclass-img-div {
+    padding: 0px;
+    margin: 0px;
+}
+
+.myclass-img-img1 {
+    width: 100%;
+}
+
+
+/* first image below paragraph end */
+
+
+/* mask group image start */
+
+.my-maskgroup-row {
+    padding-top: 32px;
+}
+
+.my-maskgroup-m1 {
+    border-top: 2px solid black;
+}
+
+.my-maskgroup-m2 {
+    padding-top: 24px;
+}
+
+.mike-mat {
+    font-family: 'SFProText';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.09px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.mike-mat-date {
+    font-family: 'SFProText';
+    font-weight: 400;
+    line-height: 19.09px;
+    font-size: 16px;
+}
+
+.my-maskgroup-m3 {
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.my-maskgroup-m3-1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* mask group image end */
+
+
+/* facebook icons for mobile start */
+
+.my-fb-twi {
+    padding-top: 36px;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.my-fb-twi-1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/* facebook icons for mobile end */
+
+
+/* facebook below paragraph start */
+
+.my-fb-below-para {
+    padding-top: 58px;
+}
+
+.my-fb-below-para-1 {
+    font-family: 'NewYorkSmallRegular';
+    font-size: 20px;
+}
+
+
+/* facebook below paragraph end */
+
+
+/* facebook below paragraph heading start */
+
+.my-fb-below-para-heading {
+    padding-top: 57px;
+}
+
+.my-fb-below-para-heading {
+    font-family: 'SF Pro Display Bold';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 51.2px;
+}
+
+
+/* facebook below paragraph heading end */
+
+
+/* facebook below paragraph new heading start */
+
+.my-fb-head-para-new {
+    padding-top: 58px;
+}
+
+.my-fb-head-para-new-1 {
+    font-family: 'NewYorkSmallRegular';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+
+/* facebook below paragraph new heading end */
+
+
+/* human images start */
+
+.my-human-img {
+    padding-top: 52px;
+    padding-bottom: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+}
+
+
+/* human image end */
+
+
+/* human images paragraph 1 and 2 start */
+
+.my-human-para-1 {
+    padding-bottom: 52px;
+}
+
+.my-human-para-2 {
+    font-family: 'SFProText';
+    font-weight: 600 !important;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* human images paragraph 1 and 2 end */
+
+
+/* human images paragraph 3 and 4 start */
+
+.my-human-para-3 {
+    padding-bottom: 52px;
+}
+
+.my-human-para-4 {
+    font-family: 'NewYorkSmallRegular';
+    font-weight: 400 !important;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+
+/* human images paragraph 3 and 4 end */
+
+
+/* human images paragraph 5 and 6 start */
+
+.my-human-para-5 {
+    padding-bottom: 19px;
+}
+
+.my-human-para-6 {
+    font-family: 'NewYorkSmallRegular';
+    font-weight: 400 !important;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+
+/* human images paragraph 5 and 6 end */
+
+
+/* human images paragraph 7 and 8 start */
+
+.my-human-para-7 {
+    padding-bottom: 52px;
+}
+
+.my-human-para-8 {
+    font-family: 'NewYorkSmallRegular';
+    font-weight: 400 !important;
+    font-size: 20px;
+    line-height: 34px;
+    list-style-type: square;
+}
+
+
+/* human images paragraph 7 and 8 end */
+
+
+/* human images paragraph 9 and 10 start */
+
+.my-human-para-9 {
+    padding-bottom: 52px;
+}
+
+.my-human-para-10 {
+    font-family: 'NewYorkSmallRegular';
+    font-weight: 400 !important;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+
+/* human images paragraph 9 and 10 end */
+
+
+/* human images paragraph 11 and 12 start */
+
+.my-human-para-11 {
+    padding-bottom: 77px;
+}
+
+.my-human-para-12 {
+    font-family: 'NewYorkSmallRegular';
+    font-weight: 400 !important;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+
+/* human images paragraph 11 and 12 end */
+
+
+/* fb large icon 1 start */
+
+.my-fb-large-n1 {
+    padding-bottom: 32px;
+    text-align: center;
+}
+
+.my-fb-twi-1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* fb large icon 1 end*/
+
+
+/* fb large icon text 1 to 3 start */
+
+.my-fb-large-n-1 {
+    padding-bottom: 34px;
+}
+
+.my-fb-large-n-3 {
+    font-family: 'SFProText';
+    font-weight: 700 !important;
+    font-size: 16px;
+    line-height: 19.09px;
+    letter-spacing: 3%;
+    text-decoration: underline;
+}
+
+
+/* fb large icon text 1 to 3 end */
+
+
+/* fb large icon text 4 to 5 start */
+
+.my-fb-large-n-4 {
+    padding-bottom: 32px;
+}
+
+.my-fb-large-n-5 {
+    border-top: 1px dotted black;
+}
+
+
+/* fb large icon text 4 to 5  end */
+
+
+/* maskgroup new 1 start */
+
+.my-maskgroup-new-1 {
+    padding-bottom: 132px;
+}
+
+.my-maskgroup-new-3 {
+    font-family: 'NewYorkSmallRegular';
+    font-weight: 700 !important;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+
+/* maskgroup new 1 end */
+
+
+/* h1 1 start */
+
+.hr-1 {
+    padding-bottom: 73px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.hr-2 {
+    padding: 0px;
+    margin: 0px;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+.hr-3 {
+    position: relative;
+    bottom: 30px;
+}
+
+
+/* h1 1 end */
+
+
+/* hr new 1 start */
+
+.my-hr-new-1 {
+    padding-bottom: 27px;
+}
+
+.my-hr-new-2 {
+    font-family: 'NewYorkExtraLargeRegular';
+    font-weight: 700 !important;
+    font-size: 44px;
+    line-height: 52.51px;
+    text-align: center;
+}
+
+
+/* hr new 1 end */
+
+
+/* images new 1 start */
+
+.my-img-div-new-1 {
+    text-align: center;
+}
+
+.my-img-div-new-1-txt {
+    font-family: 'SFProText';
+    font-weight: 700 !important;
+    font-size: 22px;
+    line-height: 26.4px;
+    text-align: center;
+}
+
+
+/* images new 1 end  */
+
+
+/* images new 2 start */
+
+.my-img-div-new-2 {
+    text-align: center;
+}
+
+.my-img-div-new-2-txt {
+    font-family: 'SFProText';
+    font-weight: 700 !important;
+    font-size: 22px;
+    line-height: 26.4px;
+    text-align: center;
+}
+
+
+/* images new 2 end  */
+
+
+/* images new 3 start */
+
+.my-img-div-new-3 {
+    text-align: center;
+}
+
+.my-img-div-new-3-txt {
+    font-family: 'SFProText';
+    font-weight: 700 !important;
+    font-size: 22px;
+    line-height: 26.4px;
+    text-align: center;
+}
+
+
+/* images new 3 end  */
+
+
+/* image down new div start */
+
+.my-img-down-div {
+    padding-top: 34px;
+    padding-bottom: 114px;
+}
+
+
+/* image down new div end  */
+
+
+/* images new 4 start */
+
+.my-img-div-new-4 {
+    text-align: center;
+}
+
+.my-img-div-new-4-txt {
+    font-family: 'SFProText';
+    font-weight: 700 !important;
+    font-size: 22px;
+    line-height: 26.4px;
+    text-align: center;
+}
+
+
+/* images new 4 end  */
+
+
+/* images new 5 start */
+
+.my-img-div-new-5 {
+    text-align: center;
+}
+
+.my-img-div-new-5-txt {
+    font-family: 'SFProText';
+    font-weight: 700 !important;
+    font-size: 22px;
+    line-height: 26.4px;
+    text-align: center;
+}
+
+
+/* images new 5 end  */
+
+
+/* images new 6 start */
+
+.my-img-div-new-6 {
+    text-align: center;
+}
+
+.my-img-div-new-6-txt {
+    font-family: 'SFProText';
+    font-weight: 700 !important;
+    font-size: 22px;
+    line-height: 26.4px;
+    text-align: center;
+}
+
+
+/* images new 6 end  */
+
+
+/* LAST DIALOG START */
+
+.my-last-dialog {
+    text-align: center;
+    padding-top: 52px;
+    border-top: 5px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 111px;
+}
+
+.my-last-dialog-2 {
+    font-family: 'NewYorkExtraLargeRegular';
+    font-weight: 700 !important;
+    font-size: 36px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.my-last-dialog-3 {
+    font-family: 'SFProText';
+    font-weight: 400 !important;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.my-last-dialog-5 {
+    padding: 5px;
+    margin: 0px;
+    background-color: white;
+    color: black;
+}
+
+.my-last-dialog-6 {
+    padding: 5px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+/* LAST DIALOG END */
+
+
+/* last div start */
+
+.my-last-div-new {
+    color: white;
+    background-color: black;
+}
+
+.my-last-div-new-1 {
+    text-align: center;
+    margin-bottom: 151px;
+}
+
+.my-last-div-new-2 {
+    font-family: 'SFProText';
+    font-weight: 400 !important;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.my-last-div-new-3 {
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-bottom: 25.58px;
+}
+
+.my-last-div-new-4 {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.my-last-div-new-5 {
+    font-family: 'NewYorkSmallRegular';
+    font-weight: 400 !important;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.my-last-div-new-6 {
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+.my-last-div-new-7 {
+    text-decoration: underline;
+    font-family: 'SFProText';
+    font-weight: 500 !important;
+    font-size: 16px;
+}
+
+.my-last-div-new-8 {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.my-last-div-new-9 {
+    font-family: 'SFProText';
+    font-weight: 500 !important;
+    font-size: 12px;
+}
+
+
+/* last div end */
